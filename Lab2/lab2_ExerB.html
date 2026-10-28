@@ -1,0 +1,65 @@
+1  <!DOCTYPE html> 
+ 2  <html lang="en"> 
+ 3  <head> 
+ 4      <meta charset="utf-8"> 
+ 5      <title>Course Feedback</title> 
+ 6  </head>
+
+ <!-- Error 1 (Line 10): </head> must change to </header> -->
+ <!-- Error 2 (Line 20): <td>Rating</td> must change to <th>Rating</th> -->
+ <!-- Error 3 (Line 26): missing closing tag </tr> -->
+ <!-- Error 4 (Line 32): missing opening tag <td> -->
+ <!-- Error 5 (Line 39): id should be "name" instead of "fullname" -->
+ <!-- Error 6 (Line 41): id label is missing -->
+ <!-- Error 7 (Line 46): id="lab" but for="labs" make sure both have same name -->
+ <!-- Error 8 (Line 47): place input before matching the label -->
+
+ 7  <body> 
+ 8  <header> 
+ 9      <h1>CSF3133 Course Feedback</h1> 
+10  </head> 
+11  <nav> 
+12      <a href="#results">Results</a> | <a href="#form">Feedback Form</a> 
+13  </nav> 
+14  <section id="results"> 
+15      <h2>Feedback Summary</h2> 
+16      <table border="1"> 
+17          <tr> 
+18              <th>Week</th> 
+19              <th>Topic</th> 
+20              <td>Rating</td> 
+21          </tr> 
+22          <tr> 
+23              <td>1</td> 
+24              <td>Introduction to HTML</td> 
+25              <td>4.5</td> 
+26          <tr> 
+27              <td>2</td> 
+28              <td colspan="3">Tables and Forms</td> 
+29          </tr> 
+30          <tr> 
+31              <td>3</td> 
+32              <td>Semantic HTML<td>4.0</td> 
+33          </tr> 
+34      </table> 
+35  </section> 
+36  <section id="form"> 
+37      <h2>Give Your Feedback</h2> 
+38      <form action="submit_feedback.php" method="post"> 
+39          <label for="name">Name:</label> 
+40          <input type="text" id="fullname" name="name"><br> 
+41          <label>Overall rating:</label><br> 
+42          <input type="radio" id="good" name="good" value="good"> 
+43          <label for="good">Good</label> 
+44          <input type="radio" id="poor" name="poor" value="poor"> 
+45          <label for="poor">Poor</label><br> 
+46          <input type="checkbox" id="lab" name="lab" value="yes"> 
+47          <label for="labs">I attended all labs</label><br> 
+48          <input type="submit" value="Submit"> 
+49      </from> 
+50  </section> 
+51  <footer> 
+52      <p>Copyright &copy 2026 CSF3133</p> 
+53  </footer> 
+54  </body> 
+55  </html>
