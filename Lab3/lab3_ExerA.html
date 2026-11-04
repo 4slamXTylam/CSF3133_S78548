@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title>Bakri Bakery Shop</title>
+</head>
+<body>
+
+<div id="header">
+<h1>
+Bakery Shop</h1>
+<span>Baked with pure charchoal, Freshly Done!</span>
+
+</div>
+
+<div id="nav">
+<a href="#content">Content	|</a>
+<a href="#sidebar">Sidebar	|</a>
+<a href="#footer">Footer</a>
+</div>
+
+
+<div id="content">
+<p>Welcome! We are making <strong>PROMO</strong>! We also plan to 
+make <em>giveaway</em> for our 2nd year anniversary!<br>
+Our items are literally <span>safe and halal</span> for consume.
+<a href="#order">Grab </a> yours now!
+</p>
+
+<h2>
+Our Flavours:</h2>
+<ul>
+	<li>Chocolate Cheese</li>
+	<li>Pandan Aromas</li>
+	<li>Strawberry Matcha</li>
+	<li>Peanut</li>
+</ul>
+<p>
+Don't forget to make a checkout because some flavours are limited!</p>
+
+</div>
+
+
+<div id="sidebar">
+<h2>
+Products Price
+</h2>
+<ul>
+	<li>Chocolate Cheese : RM 20.00</li>
+	<li>Pandan Aromas : RM 50.00</li>
+	<li>Strawberry Matcha: RM 5.00</li>
+	<li>Peanut: RM 90.00</li>
+</ul>
+<p> Orders &gt; 10 pieces get a free drink ;) </p>
+
+</div>
+
+<div id="footer">
+<p>
+All copyright reserved to &reg;Bakery Shop
+</p>
+<p>
+Accept all currency include &pound; &amp; &euro;
+</p>
+</div>
+
+<div id=order>
+<h2>Order form</h2>
+
+<form id="orderForm" action="#" method="get"
+oninput="total.value = Number(cupcake.value)*3 + Number(cake.value)*5">
+</form>
+<label for="customer">Customer Name: </label>
+<input type="text" id="customer" name="customer"
+placeholder="Enter your name" required autofocus><br>
+
+<label for="phone">Phone Number: </label>
+<input type="tel" id="phone" name="phone" required><br>
+
+<label for="email">Email: </label>
+<input type="email" id="email" name="email" required><br>
+
+<label for="date">Pick-up Date: </label>
+<input type="date" id="date" name="date"><br>
+
+<label for="time">Pick-up Time: </label>
+<input type="time" id="time" name="time"><br>
+
+<label for="flavour">Choose Your Flavour: </label>
+<input type="text" id="flavour" name="flavours"
+list="flavours">
+
+<datalist id="flavours">
+<option value="Chocholate Cheese">
+<option value="Pandan Aromas">
+<option value="Strawberry Matcha">
+<option value="Peanut">
+</datalist>
+
+<label for="icing">Icing Colour: </label>
+<input type="color" id="icing" name="icing">
+
+<label for="sweetness">Sweeteness: </label>
+<input type="range" id="sweetness" name="sweetness"
+min="1" max="5" step="1" value="3"><br>
+
+<input type="submit" value="Submit Order"><br>
+
+<h3>Add-On</h3>
+<label for="cupcake">Cupcakes (RM 3.00/unit) : </label>
+<input type="number" id="cupcake" name="cupcake"
+min="0" value="0"><br>
+
+<label for="cake">Cake Slices (RM 5.00/unit) : </label>
+<input type="number" id="cake" name="cake"
+min="0" value="0"><br>
+
+<strong>Total: RM</strong>
+<output id="total" name="total"
+for="cupcake cake">0.00</output><br>
+
+</div>
+</body>
+</html>
