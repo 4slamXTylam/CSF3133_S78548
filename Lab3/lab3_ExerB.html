@@ -1,0 +1,110 @@
+<!DOCTYPE> 
+ <html lang="en"> 
+ <head> 
+ <meta charset="utf-8"> 
+<title>Ticket Booking</title> 
+</head> 
+
+<!-- Error 1 (Line 1): missing <!DOCTYPE 
+html> -->
+<!-- Error 2 (Line 9): incorrect <span> closing tag position -->
+<!-- Error 3 (Line 11): incorrect <span> tag, should be <div> -->
+<!-- Error 4 (Line 14): incorrect string value for calculations -->
+<!-- Error 5 (Line 18): required tag is missing -->
+<!-- Error 6 (Line 22): unmatched datalist id name -->
+<!-- Error 7 (Line 32): min and max tags is in reversed -->
+<!-- Error 8 (Line 33): unmatched output name -->
+<!-- Error 9 (Line 38): incorrect &Copy tag, must be small letter &copy -->
+<!-- Error 10 (Last Line): unnecessary </html> closing tag -->
+
+ <body> 
+   <div id="header"> 
+       <h1>e-Ticket <span>Your Campus Cinema</h1></span> 
+ </div> 
+  <span id="content"> 
+      <h2>Book Your Ticket</h2> 
+      <p>Promotion: tickets < RM10 for students &amp staff!</p> 
+      <form action="booking.php" oninput="total.value = adult.value + 
+child.value"> 
+          <label for="name">Name:</label> 
+          <input type="text" id="name" name="name" placeholder="Enter your 
+name" required autofocus><br> 
+          <label for="email">E-mail:</label> 
+          <input type="emial" id="email" name="email"><br> 
+          <label for="date">Show date:</label> 
+          <input type="date" id="date" name="date"><br> 
+          <label for="movie">Movie:</label> 
+          <input id="movie" name="movie" list="movies"><br> 
+          <datalist id="movielist"> 
+              <option value="Space Rangers"> 
+              <option value="Kampung Comedy"> 
+          </datalist> 
+          <label for="adult">Adult tickets:</label> 
+          <input type="number" id="adult" name="adult" value="0"><br> 
+          <label for="child">Child tickets:</label> 
+          <input type="number" id="child" name="child" value="0"><br> 
+          <label for="rating">Rate our service:</label> 
+          <input type="range" id="rating" name="rating" min="5" max="1"><br> 
+          Total tickets: <output name="total" for="adult kid"></output><br> 
+          <input type="submit" value="Book Now"> 
+      </form> 
+  </span> 
+  <div id="footer"> 
+      <p>&Copy; 2026 CineKampus. All rights reserved.</p> 
+  </div> 
+
+<!-- PART 2 -->
+<div id="sidebar">
+
+<form id="price" action="#" method="get"
+oninput="total.value = Number(adult.value)*12 + Number(kid.value)*8">
+
+<title>Now Showing!</title>
+<ul>
+<li><strong>Star Wars |</strong>
+<span>PG-16</span>
+<a href="https://www.imdb.com" target="_blank">Watch Trailer</a>
+<label for="phone">Phone Number: </label>
+<input type="tel" id="phone" name="phone" required>
+<label for="time">Time: </label>
+<input type="time" id="time" name="time"><br></li>
+
+<li><strong>Pulang |</strong>
+<span>PG-18</span>
+<a href="https://www.imdb.com" target="_blank">Watch Trailer</a>
+<label for="phone">Phone Number: </label>
+<input type="tel" id="phone" name="phone" required>
+<label for="time">Time: </label>
+<input type="time" id="time" name="time"><br></li>
+
+<li><strong>Transformers |</strong>
+<span>PG-13</span>
+<a href="https://www.imdb.com" target="_blank">Watch Trailer</a>
+<label for="phone">Phone Number: </label>
+<input type="tel" id="phone" name="phone" required>
+<label for="time">Time: </label>
+<input type="time" id="time" name="time"><br></li>
+
+<label for="adult">Adult (RM 12.00/unit) : </label>
+<input type="number" id="adult" name="adult"
+min="0" value="0"><br>
+
+<label for="kid">Child (RM 8.00/unit) : </label>
+<input type="number" id="kid" name="kid"
+min="0" value="0"><br>
+
+<strong>Total: RM</strong>
+<output id="total" name="total"
+for="total">0.00</output><br>
+
+</ul>
+
+<div id="footer">
+<p>
+e-Ticket&reg; - Campus Cinema &gt; RM10 every Tuesday
+</p>
+</div>
+
+  </body> 
+  </html> </body>	
+  </html>	
