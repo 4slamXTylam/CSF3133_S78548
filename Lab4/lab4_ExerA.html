@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit Terengganu</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>#welcome {
+	background-color: #f0f0f0;
+	background-size: cover;
+	background-position: center;
+	color: blue;
+	padding: 75px 20px;
+}
+
+#welcome h1{
+	color: white;
+	text-decoration: overline;
+}
+</style>
+</head>
+
+<body>
+ 
+<header id="welcome" class="center">
+<h1>Discover Terengganu!</h1>
+<a class="hero-button" href="#destinations">Explore Destinations</a>
+</header>
+
+<nav class="navbar">
+<ul>
+	<li><a href="#welcome">Home Page</a></li>
+	<li><a href="#destinations">Destinations</a></li>
+	<li><a href="#video">video</a></li>
+	<li><a href="#trip">Trip Plan</a></li>
+
+</ul>
+</nav>
+
+
+<main>
+<section id="destinations" class="content-section">
+	<h2>Top Destinations</h2>
+<p class="center">Explore some popular place in Terengganu</p>
+<div class="card-container">
+<article class="card">
+<img src="https://th.bing.com/th/id/OIP.1rtyhChT4rlZl-I4JFTtNwHaEo?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wondeful scenery in Pulau Redang">
+<h3>Redang Island</h3>
+<p><em><strong>PROMO PRICE</strong></em> for smooth and clear beach lovers! </p>
+<p class="price">
+<span class="old-price">RM 299</span> RM 199</p>
+</article>
+
+<article class="card">
+<img src="https://tse1.mm.bing.net/th/id/OIP.jBCyPhhZomYW13gA0i-kSgHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Calma beach with breezing wind">
+<h3>Perhentian Island</h3>
+<p><em><strong>PROMO PRICE</strong></em> for cold sand and spacious beach lovers!</p>
+<p class="price">
+<span class="old-price">RM 299</span> RM 199</p>
+</article>
+
+<article class="card">
+<img src="https://th.bing.com/th/id/OIP.urU8adT2SG_V7CckDp9ImgHaF7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Experience fantastic and adventuruos at the lake">
+<h3>Tasik Kenyir</h3>
+<p><em><strong>PROMO PRICE</strong></em> for nature adventure lovers!</p>
+<p class="price">
+<span class="old-price">RM 199</span> RM 99</p>
+</article>
+</div>
+
+<div class="seat-info-center">
+<h2>Seat Availability</h2>
+<p>28 / 40 seats have been filled.</p>
+<meter min="0" max="40" value="28">28 outof 40</meter>
+</div>
+</section>
+
+
+<section id="video" class="content-section video-section">
+<h2>Experience Terengganu</h2>
+<figure>
+<video controls width="720" height="400">
+<source src="https://www.bing.com/videos/riverview/relatedvideo?q=beach+video+2+min&mid=0AC0C7A03FE3289A88460AC0C7A03FE3289A8846&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCxGLekaJXkagNKw-i-3aE5w&mcid=029D8334403541BD90EAE49E4F4A4A98&FORM=VIRE" type="video/mp4">Not supported</video>
+<P class="caption">enjoy the beauty of Terengganu beach!</P>
+</figure>
+</section>
+
+
+<section id="trip" class="content-section">
+<h3>Book Your Trip!</h3>
+<p class="left">Tell us what your trips planning</p>
+
+<form class="trip-form" action="#" method="get">
+
+  <label for="name">Full Name:</label>
+<br>
+  <input type="text" id="name" name="name" 
+  placeholder="enter your NRIC name" required>
+
+<br>
+   <label for="email">Email:</label>
+<br>
+  <input type="email" id="email" name="email"
+  placeholder = "username@example.com" required>
+
+<fieldset>
+<legend>Traveller: </legend>
+<label><input type="radio" name="traveller" value="student" required>Student</label>
+<label><input type="radio" name="traveller" value="staff" required>Staff</label>
+<label><input type="radio" name="traveller" value="public" required>Public</label>
+</fieldset>
+
+<fieldset>
+<legend>Interests: </legend>
+<label><input type="checkbox" name="interests" value="islands" required>Islands</label>
+<label><input type="checkbox" name="interests" value="food" required>Food</label>
+<label><input type="checkbox" name="interests" value="culture" required>Culture</label>
+<label><input type="checkbox" name="interests" value="nature" required>Nature</label>
+</fieldset>
+
+<button type="submit">Submit</button>
+</form>
+</section>
+</main>
+
+<footer class="center">
+<p>Visit Ganu &copy; 2026. All copyrights reserved.</p>
+<address>Contact Us: 
+<a href="mailto:info@visitganu.email">info@visitganu.email</a>
+</address>
+</footer>
+
+</body>
+</html>
