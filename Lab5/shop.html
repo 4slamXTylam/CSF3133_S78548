@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Bookstore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  <!--
+    Part 1 Error Identification List (14 Errors Fixed):
+    Error 1 (shop.html, Line 6): Invalid Google Fonts URL used '/css?family=Roboto:wght@400;700' instead of '/css2?family=Roboto:wght@400;700'.
+    Error 2 (shop.html, Line 7): Typo in link attribute rel="stylesheets" (plural) instead of rel="stylesheet".
+    Error 3 (shop.html, Lines 10-12): <style> element was placed inside <body> instead of <head>.
+    Error 4 (shop.html, Line 18): Invalid inline CSS syntax style="color=#1B4F72;" used '=' instead of ':' (fixed to color: #1B4F72; in Part 1, then styled white in <header> in Part 2).
+    Error 5 (shop.html, Line 20): Table id="product" did not match the CSS selector #products in shop.css.
+    Error 6 (shop.css, Line 2): Misspelled font name 'Robotto' instead of 'Roboto'.
+    Error 7 (shop.css, Line 4): Missing hyphen in background-repeat: no repeat; (should be no-repeat).
+    Error 8 (shop.css, Line 5): Typo in property name bacground-position (should be background-position).
+    Error 9 (shop.css, Line 18): Used display: inline; instead of display: block; on li a, preventing top and bottom padding from applying.
+    Error 10 (shop.css, Line 23): Invalid selector li:a:hover had an extra colon between li and a (should be li a:hover).
+    Error 11 (shop.css, Line 27): Invalid property value border-collapse: collapsed; (should be collapse).
+    Error 12 (shop.css, Line 34): Selector #products tr:nth-child(2) styled only row 2 instead of alternating even rows #products tr:nth-child(even).
+    Error 13 (shop.css, Line 37): Invalid pseudo-class #products tr:hovered (should be #products tr:hover).
+    Error 14 (shop.css, Line 45): Missing semicolon ';' after background-color: #f1f1f1, breaking the next declaration.
+  -->
+
+  <!-- Header Structure with Background Image -->
+  <header id="home">
+    <h1>Campus Bookstore</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section id="books">
+      <p>Textbooks, stationery and more for every student.</p>
+      <table id="products">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Price (RM)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Design Basics</td>
+            <td>Textbook</td>
+            <td>45.00</td>
+          </tr>
+          <tr>
+            <td>A4 Notebook</td>
+            <td>Stationery</td>
+            <td>6.50</td>
+          </tr>
+          <tr>
+            <td>USB Drive 32GB</td>
+            <td>Gadget</td>
+            <td>25.00</td>
+          </tr>
+          <tr>
+            <td>Highlighter Set</td>
+            <td>Stationery</td>
+            <td>9.90</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    &copy; 2026 Campus Bookstore
+  </footer>
+
+</body>
+</html>
