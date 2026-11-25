@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="grades.js" defer></script>
+</head>
+
+//Error 1(grade.html, Line 9): Missing return statement in the checkMark() function. The function should return true or false based on the validation of the input mark.
+//Error 2(grade.html, Line 19): Missing CSS connection
+//Error 3(grade.html, Line 19): Use script loading inside the head tag
+//Error 4(grade.html, Line 16-17): The "randomMark()" function is not defined in the provided code
+//Error 5(grade.html, Line 16-17): Missing date display for when the mark was checked
+
+<body>
+  <main class="container">
+    <h1>Student Grade Calculator</h1>
+
+    <form id="gradeForm" onsubmit="return checkMark()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter student name">
+
+      <label for="mark">Mark (0-100):</label>
+      <input type="text" id="mark" name="mark" placeholder="Enter mark">
+
+      <div class="buttons">
+        <button type="submit">Check Grade</button>
+        <button type="button" onclick="randomMark()">Random Mark</button>
+      </div>
+    </form>
+
+    <p id="result" aria-live="polite"></p>
+    <p id="checkedAt"></p>
+
+    <button type="button" onclick="showTable()">Show Grade Table</button>
+    <div id="tableContainer"></div>
+  </main>
+</body>
+</html>

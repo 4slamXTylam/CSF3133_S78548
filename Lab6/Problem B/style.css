@@ -1,0 +1,37 @@
+/* Main page layout and form styling */
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 24px; font-family: Arial, sans-serif;
+  background: #f3f6f8; color: #263746;
+}
+.container {
+  max-width: 700px; margin: 30px auto; padding: 24px;
+  background: white; border-radius: 8px;
+  box-shadow: 0 2px 10px #00000012;
+}
+h1 { color: #174d70; margin-top: 0; }
+form {
+  max-width: 420px; padding: 16px; border: 1px solid #d3dde5;
+  border-radius: 6px; background: #fafcfd;
+}
+label { display: block; margin: 10px 0 5px; font-weight: bold; }
+input {
+  width: 100%; padding: 9px; border: 1px solid #aab7c4;
+  border-radius: 4px;
+}
+input:focus { outline: 2px solid #1677ad; }
+button {
+  margin: 12px 5px 4px 0; padding: 10px 14px; border: 0;
+  border-radius: 4px; background: #1677ad; color: white; cursor: pointer;
+}
+button:hover { background: #105b86; }
+#result { margin-top: 18px; font-weight: bold; }
+#checkedAt { color: #526575; font-size: 14px; }
+table { margin-top: 14px; border-collapse: collapse; min-width: 300px; }
+th, td { border: 1px solid #cbd6df; padding: 9px 18px; text-align: left; }
+th { background: #174d70; color: white; }
+tbody tr:nth-child(even) { background: #f0f5f8; }
+@media (max-width: 520px) {
+  body { padding: 10px; }
+  .container { margin: 10px auto; padding: 16px; }
+}
