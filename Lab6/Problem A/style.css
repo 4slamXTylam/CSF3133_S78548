@@ -1,0 +1,111 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f58b;
+    margin: 30px;
+    color: #333;
+}
+
+/* Main heading */
+h2 {
+    color: #174d70;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+}
+
+/* Input styling */
+input {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: #1680b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0d527a;
+}
+
+/* Result styling */
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Date and time styling */
+#checkedAt {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Grade table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 350px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table header */
+th {
+    background-color: #174d70;
+    color: white;
+}
+
+div {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.player-section, .computer-section {
+    display: flex;
+    width: auto;
+    vertical-align: top;
+    text-align: center;
+}
+
+.game-area {
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 38;
+    align-items: flex-start;
+}
+
+/* Alternate row background */
+tr:nth-child(even) {
+    background-color: #eaf0f5;
+}
+
